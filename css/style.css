@@ -169,12 +169,12 @@ body {
   width: 200px;
   height: 300px;
   position: relative;
-}
 
-.card>img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+  >img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
 }
 
 .card-contents {
@@ -186,9 +186,16 @@ body {
   padding: 5px 10px;
 }
 
-.card-header>div>img {
-  width: 2.5rem;
+.card-header {
+  >div {
+    >img {
+      width: 2.5rem;
+    }
+
+  }
 }
+
+
 
 .app-link {
   border: solid rgba(255, 255, 255, 0.144) 1px;
@@ -197,8 +204,10 @@ body {
   border-radius: 5px;
 }
 
-.app-link>img {
-  width: 15px;
+.app-link {
+  >img {
+    width: 15px;
+  }
 }
 
 .card-text {
@@ -215,48 +224,51 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-}
 
-.header>.wrapper {
-  width: 80%;
-  height: 100%;
-  border: 1px solid rgba(255, 255, 255, 0.325);
-  border-radius: 20px;
-  background-color: rgba(255, 255, 255, 0.062);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+  >.wrapper {
+    width: 80%;
+    height: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.325);
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0.062);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-.wrapper>h1 {
-  padding-left: 1rem;
-  width: 100px;
-}
+    >h1 {
+      padding-left: 1rem;
+      width: 100px;
+    }
 
-.wrapper>.header-end {
-  padding-right: 1rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+    >.header-end {
+      padding-right: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
 
-.header-end>div {
-  margin: 0 10px;
-}
+      >div {
+        margin: 0 10px;
+      }
+    }
 
-.header-nav>ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
+    >.header-nav {
+      >ul {
+        display: flex;
+        justify-content: center;
+        list-style: none;
 
-.header-nav>ul>li {
-  margin: 0 5px;
-}
+        >li {
+          margin: 0 5px;
 
-.header-nav>ul>li>a {
-  text-decoration: none;
-  color: rgb(186, 186, 186);
+          >a {
+            text-decoration: none;
+            color: rgb(186, 186, 186);
+          }
+        }
+      }
+
+    }
+  }
 }
 
 
